@@ -75,10 +75,6 @@ The following metrics are used to evaluate performance:
 * Top-K sparsification achieves high compression rates but may degrade convergence without compensation.
 * Top-K with error compensation improves stability but shows limited gains in recovery and speedup compared to INT8-based methods.
 
-## Visualization
-
-![img](content/loss.png)
-
 
 | Method      | Mean baseline gap | Total messages size (Mb) | Recovery (%) | SpeedUp (%) |
 |-------------|------------------|--------------------------|--------------|-------------|
@@ -87,3 +83,7 @@ The following metrics are used to evaluate performance:
 | int8_comp   | 0.44             | 310                      | 45           | 17.6        |
 | topk        | 1.55             | 24                       | -            | -           |
 | topk_comp   | 1.63             | 24                       | 5.6          | 4           |
+
+## Visualization
+
+![img](content/loss.png)
