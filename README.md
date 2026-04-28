@@ -1,26 +1,24 @@
-# ErrorCompensation
-
 # Development and Study of Error Compensation Methods for Gradient Compression in Distributed Training of Large Language Models
 
 ## Repository Structure
 
 ```
 <root>
-├── data/ - data for LLM trining
-├── logs/ - training logs
+├── data/         - data for LLM trining
+├── logs/         - training logs
 ├── methods/
-│   ├── int8_errcomp.py
-│   ├── int8.py
-│   ├── topk_errcomp.py
-│   ├── topk.py
+│   ├── int8_errcomp.py - quantzation with error compensation
+│   ├── int8.py         - quantzation
+│   ├── topk_errcomp.py - sparsification with error compensation
+│   ├── topk.py         - sparsification
 │   └── utils.py
-├── kill.sh - stop all training processes
-├── logs.ipynb - visualization
-├── model.py - GPT-2
+├── kill.sh       - stop all training processes
+├── logs.ipynb    - visualization
+├── model.py      - GPT-2
 ├── README.md
-├── run1.sh - run training process on host-1
-├── run2.sh - run training process on host-2
-└── train.py - training loop
+├── run1.sh       - run training process on host-1
+├── run2.sh       - run training process on host-2
+└── train.py      - training loop
 ```
 
 ## Overview
