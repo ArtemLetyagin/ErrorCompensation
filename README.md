@@ -79,3 +79,11 @@ The following metrics are used to evaluate performance:
 
 ![img](content/loss.png)
 
+
+| Method      | Mean baseline gap | Total messages size (Mb) | Recovery (%) | SpeedUp (%) |
+|-------------|------------------|--------------------------|--------------|-------------|
+| baseline    | 0                | 620                      | -            | -           |
+| int8        | 0.73             | 310                      | -            | -           |
+| int8_comp   | 0.44             | 310                      | 45           | 17.6        |
+| topk        | 1.55             | 24                       | -            | -           |
+| topk_comp   | 1.63             | 24                       | 5.6          | 4           |
